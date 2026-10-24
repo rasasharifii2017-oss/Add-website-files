@@ -91,14 +91,7 @@ footer { padding: 30px; color: #d5c1e8; }
     </button>
   </div>
 </div>
-<div class="song" data-title="صدای دریا">
-  <h3>🌊 صدای دریا</h3>
-  <button onclick="document.getElementById('seaSong').play()">
-    ▶️ پخش صدای دریا
-  </button>
-  <audio id="seaSong" style="display:none">
-    <source src="./sea.mp3" type="audio/mpeg">
-  </audio>
+<div 
 </div>
 
 
@@ -106,27 +99,10 @@ footer { padding: 30px; color: #d5c1e8; }
 
 <script>
 <script>
-document.querySelector('input[type="search"]')
-  ?.addEventListener('input', function() {
-    document.querySelectorAll('.song').forEach(song => {
-      song.style.display =
-        song.dataset.title.toLowerCase().includes(
-          this.value.toLowerCase()
-        ) ? '' : 'none';
-    });
-  });
+
 </script>
 
-function searchSongs() {
-  const q = document.getElementById("search")
-    .value.toLowerCase();
 
-  document.querySelectorAll(".card").forEach(card => {
-    card.style.display =
-      card.innerText.toLowerCase().includes(q)
-        ? "" : "none";
-  });
-}
 </script>
 </body>
 </html>
